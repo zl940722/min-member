@@ -1,0 +1,202 @@
+/**index.wxss**/
+.active{
+    display: block !important;
+}
+page {
+  background: rgba(245,245,245,245);
+    width: 100%;
+}
+
+.all{
+    width: 100%;
+    overflow: hidden;
+}
+
+.container {
+  padding-bottom: 10rpx;
+  position: relative;
+  height: 260rpx;
+  background: #fff;
+}
+
+.panel {
+  padding-top: 10rpx;
+  border-radius: 10rpx;
+
+}
+
+.header {
+    width: 90%;
+    position: absolute;
+    left: 5%;
+    z-index: 999;
+    height: 160rpx;
+    background-color: #0E90F1;
+    border-radius: 18rpx;
+}
+
+.headIcon{
+  width: 44rpx;
+  height: 44rpx;
+  float: right;
+  padding: 50rpx 30rpx 50rpx 100rpx;
+
+}
+.btnImg{
+    width: 100rpx;
+    height: 100rpx;
+    position: absolute;
+    left: 20rpx;
+    top: 20rpx;
+    z-index: 3;
+}
+.getUserButton{
+    width: 100rpx;
+    height: 100rpx;
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    left: 20rpx;
+    background: red;
+    top: 20rpx;
+    color: #fff;
+    opacity: 0;
+    z-index: 4;
+}
+
+.userinfo {
+  background: red;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.userinfo-avatar {
+  width: 90rpx;
+  height: 90rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+  float: left;
+}
+
+.userinfo-nickname {
+  color: #fff;
+  font-size: 17px;
+  font-weight: bold;
+  margin: 20rpx;
+  float: left;
+}
+
+.userinfo-text{
+  display: block;
+  font-size: 13px;
+  margin-top: 5rpx;
+}
+.center{
+    width:100%;
+    position: absolute;
+    z-index: 999;
+    left: 40%;
+    top: 135rpx;
+}
+.centerImg{
+  width: 150rpx;
+  height: 150rpx;
+
+}
+.usermotto {
+  margin-top: 200px;
+}
+.barcode{
+  position: absolute;
+  display: none;
+  z-index: 1;
+  left: 17%;
+  top: 10rpx;
+}
+.barnum{
+    position: absolute;
+    top: 124rpx;
+    left: 160rpx;
+    font-size: 26rpx;
+    color: #303133;
+}
+.barcodeCanvas{
+
+}
+
+.pullIconView{
+
+
+
+}
+.pullIcon{
+   position: absolute;
+    left: 40%;
+    top: 406rpx;
+    z-index: 999;
+    width: 140rpx;
+    height: 32rpx;
+    display: none;
+}
+
+.centerFloor{
+  margin-top: 50rpx;
+  display: flex;
+  overflow: hidden;
+  background: #fff;
+
+}
+
+.centerFloorItem{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.icon_coupon{
+    width: 25%;
+    margin: 2%;
+    margin-top: 40rpx;
+    margin-bottom: 20rpx;
+    text-align: center;
+}
+
+.icon_coupon text{
+    color: #303233;
+    bottom: 0;
+    font-size: 26rpx;
+}
+
+.icon_coupon image{
+    margin: 0 auto;
+    display: block;
+    width: 88rpx;
+    height: 88rpx;
+}
+
+.bottom{
+    margin-top: 20rpx;
+}
+.bottomHeader{
+    background: #fff;
+    padding: 20rpx;
+}
+.bottomHeader p{
+    margin-left: 5%;
+    border: 4rpx solid #0180DF;
+}
+
+.bottomHeader text{
+    margin-left: 2%;
+    color: #303233;
+    font-size: 34rpx;
+}
+.bottomImg{
+    width: 90%;
+    margin: 20rpx auto;
+}
+.bottomImg image{
+    width: 100%;
+    height: 272rpx;
+
+}

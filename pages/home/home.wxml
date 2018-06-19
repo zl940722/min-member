@@ -1,0 +1,77 @@
+<!--index.wxml-->
+<view class="all">
+    <view class="container" animation="{{animationContainer}}">
+        <view class="panel">
+
+            <view class="header" >
+                <view class="userinfo">
+                    <image hidden="{{btnImg}}" class="btnImg" src="{{'../../images/icon_avatar@3x.png'}}"></image>
+                    <button  class="getUserButton" wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo"  bindgetuserinfo="getUserInfo">
+
+                    </button>
+                    <block wx:else>
+                        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+                        <text class="userinfo-nickname">{{userInfo.nickName}}
+                            <text class="userinfo-text">{{lever}}</text>
+                        </text>
+                        <image bindtap="detailClick" class="headIcon" src="../../images/icon_back@3x.png"/>
+                    </block>
+                </view>
+                <!--<view class="userinfo">-->
+                    <!--<block >-->
+                        <!--<image class="userinfo-avatar" src="{{userInfo.avatarUrl}}"-->
+                               <!--background-size="cover"></image>-->
+                        <!--<text class="userinfo-nickname">{{userInfo.nickName}}-->
+                            <!--<text class="userinfo-text">黄金会员</text>-->
+                        <!--</text>-->
+                        <!-- <image bindtap="detailClick" class="headIcon" src="../../images/icon_back@3x.png"/>-->
+                    <!--</block>-->
+                <!--</view>-->
+            </view>
+            <view class="center" animation="{{animationData}}">
+                <image class="centerImg" bindtap="barCodeShow" src='../../images/111.png'/>
+            </view>
+
+            <view class=" barcode {{flag ? 'active' : ''}}" animation="{{animationBarcode}}">
+                <canvas class="barcodeCanvas" canvas-id="barcode" id="barcode"/>
+                <view class="barnum">{{code}}</view>
+            </view>
+        </view>
+    </view>
+    <view class="pullIconView" bindtap="barCodeHide" >
+        <image class="pullIcon {{flag ? 'active' : ''}}"  src="../../images/icon_b@3x.png"/>
+    </view>
+
+    <view class="centerFloor">
+        <view class="centerFloorItem">
+            <view class="icon_coupon">
+                <image src="../../images/icon_wallet@3x.png"/>
+                <text>我的卡包</text>
+            </view>
+            <view class="icon_coupon">
+                <image src="../../images/icon_coupon@3x.png"/>
+                <text>优惠券</text>
+            </view>
+            <view class="icon_coupon">
+                <image src="../../images/icon_integration@3x.png"/>
+                <text>积分明细</text>
+            </view>
+            <view class="icon_coupon">
+                <image src="../../images/icon_vip@3x.png"/>
+                <text>会员权益</text>
+            </view>
+        </view>
+    </view>
+
+
+    <view class="bottom">
+        <view class="bottomHeader">
+            <p></p>
+            <text>最新活动</text>
+        </view>
+        <view class="bottomImg">
+            <image src="../../images/banner@3x.png"/>
+            <image src="../../images/banner@3x.png"/>
+        </view>
+    </view>
+</view>

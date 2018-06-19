@@ -1,0 +1,37 @@
+.container-userInfo {
+    height: 100%;
+    padding: 0 20rpx
+}
+
+.flex-item {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    height: 99rpx;
+    line-height: 99rpx;
+    border-bottom: solid 1px #ededed
+}
+
+.flex-item .label {
+    font-size: 30rpx;
+    font-family:PingFang-SC-Medium;
+    color: #303233;
+    flex: 1;
+}
+
+.flex-item .extra-right {
+    font-size: 30rpx;
+    color: #919599;
+}
+
+.flex-item .arrow-right {
+    height: 32rpx;
+    width: 32rpx;
+    margin-left: 20rpx
+}
+
+.user-avatar {
+    height: 72rpx;
+    width: 72rpx;
+    border-radius: 50%
+}
